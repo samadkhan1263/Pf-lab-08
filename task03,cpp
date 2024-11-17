@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    char letter;
+
+     
+    cout << "Enter a single alphabet character: ";
+    cin >> letter;
+
+   
+    letter = tolower(letter);
+
+   
+    switch (letter) {
+        
+        case 'a':
+        case 'e':
+        case 'i':
+        case 'o':
+        case 'u':
+            cout << letter << " is a vowel." << endl;
+            break;
+
+        
+        default:
+            cout << " Letter is consonant" << endl;
+            break;
+    }
+
+    return 0;
+}
